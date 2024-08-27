@@ -19,7 +19,7 @@ export const emailApiProvider = {
       subject: `${FROM_TITLE}: ${subject}`,
       react: body,
     });
-    console.log('data', data);
+
     if (error) {
       console.error('Failed to send email:', error);
       throw error;
